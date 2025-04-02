@@ -1,5 +1,5 @@
 networks:
-  expense:
+  expense: {}
 volumes:
   mysql:
 services:
@@ -16,7 +16,7 @@ services:
     networks:
     - expense
     container_name: backend
-    depens_on:
+    depends_on:
     - mysql
 
   frontend:
